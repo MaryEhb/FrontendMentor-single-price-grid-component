@@ -1,0 +1,100 @@
+*, *::after, *::before
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    outline: none
+
+::selection
+    background: $primColor2
+    color: #FFF    
+
+body
+    font-family: $fontFamily, sans-serif
+    font-size: $fontSize
+    background: $secColor1
+    line-height: 1.5rem    
+
+.txt-green
+    color: $primColor2 
+
+.container
+    min-height: 100vh
+    display: grid
+    justify-content: center
+    align-content: center
+    margin: 0 auto
+    padding: 1rem
+    max-width: 680px
+
+.boxs-wrap
+    overflow: hidden
+    border-radius: 9px
+    box-shadow: 0 0 30px #0000002b
+
+.box
+    padding: 2.5rem
+    float: left
+    width: 50%
+    background: $primColor1
+    color: #FFF
+
+    @media (max-width: 685px)
+        width: 100%
+
+    button
+        background: $primColor2
+        border: none
+        width: 100%
+        padding: 1rem
+        margin: 2.15rem 0 1rem
+        color: #FFF
+        font-size: 18px
+        border-radius: 9px
+        box-shadow: 0px 5px 5px #00000024
+        transition: all ease-in-out .2s
+        cursor: pointer
+
+        &:hover
+            transform: scale(1.05)
+
+        &:active
+            transform: scale(0.95)    
+
+    p
+        padding-top: 1rem
+
+    h2
+        font-size: 18px
+
+    &.head
+        background: #FFF
+        width: 100%
+        h1
+            color: $primColor1
+            padding-bottom: 1rem
+            font-size: 24px
+
+        p
+            padding-top: .5rem
+            color: $secColor2
+
+    .price
+        font-size: 28px    
+        font-weight: 700
+
+        span
+            font-size: 16px
+            font-weight: 400
+            color: $secColor1
+            vertical-align: top
+
+    &:last-of-type
+        background: lighten($primColor1,3%)
+        p
+            color: $secColor1
+            max-width: 210px
+
+.attribution
+    padding: 1rem
+    text-align: center
+    
